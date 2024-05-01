@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row m-1">
+        <div class="col-3" *ngFor="let post of postList">
+            <div class="card" style="height: 31rem;">
+                <img [src]="post.postImg" class="card-img-top" alt="{{post.postTitle}}'s Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.postTitle}}</h5>
+                    <p class="card-text">{{trimText(post.postDesc, 30)}}</p>
+                    <button class="btn btn-dark" (click)="navigateToCurrentPost(post.postId)">Go to Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

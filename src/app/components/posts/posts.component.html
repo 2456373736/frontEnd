@@ -1,0 +1,22 @@
+<div class="container">
+    <form class="m-4">
+        <div class="mb-3">
+            <label for="postImg" class="form-label">Post Image</label>
+            <input type="text" class="form-control" id="postImg" aria-describedby="emailHelp"
+                [(ngModel)]="postObj.postImg" name="postImg">
+        </div>
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Post Title</label>
+            <input type="text" class="form-control" id="postTitle" [(ngModel)]="postObj.postTitle" name="postTitle">
+        </div>
+        <div class="mb-3">
+            <label for="postDesc" class="form-label">Post Description</label>
+            <input type="text" class="form-control" id="postDesc" [(ngModel)]="postObj.postDesc" name="postDesc">
+        </div>
+        <div class="mb-3">
+            <label for="recipe" class="form-label">Post Recipe</label>
+            <input type="text" class="form-control" id="recipe" [(ngModel)]="postObj.recipe" name="recipe">
+        </div>
+        <button type="button" class="btn btn-success" (click)="createPost()">Create Post</button>
+    </form>
+</div>

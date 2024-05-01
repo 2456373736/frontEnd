@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card m-3" *ngFor="let post of postObj">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img [src]="post.postImg" class="img-fluid rounded-start" alt="{{post.postTitle}}'s Image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.postTitle}}</h5>
+                    <p class="card-text">{{post.postDesc}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 m-2">
+            <h3>Here's the recipe</h3>
+            <p class="card-text">{{post.recipe}}</p>
+        </div>
+    </div>
+</div>
